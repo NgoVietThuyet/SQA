@@ -1,7 +1,12 @@
+package Test;
+
+import code.BikeRental;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
  * Kiem thu hop den cho BikeRental.tinhPhi()
@@ -10,10 +15,10 @@ import static org.junit.jupiter.api.Assertions.*;
  * PHAN 2 - Kiem thu gia tri bien don (27 ca)
  *
  */
-class BikeRentalTest {
+class BlackBoxTest {
 
     static final double DELTA = 0.001;
-    // PHAN 1 — BANG QUYET DINH (16 ca)
+//     PHAN 1 — BANG QUYET DINH (16 ca)
     @Nested
     @DisplayName("Phan 1 — Bang quyet dinh")
     class DecisionTable {
@@ -212,4 +217,6 @@ class BikeRentalTest {
             assertEquals(98000.0, BikeRental.tinhPhi("thuong", 16, "cuoituan"));
         }
     }
+
+
 }

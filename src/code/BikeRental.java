@@ -1,3 +1,5 @@
+package code;
+
 public class BikeRental {
 
     /**
@@ -24,10 +26,6 @@ public class BikeRental {
      */
     public static double tinhPhi(String loaiThe, double soGio, String loaiNgay) {
 
-        if(!loaiThe.equals("sinhvien"))
-        {
-            loaiThe = "thuong";
-        }
 
         if (soGio < 0 || soGio > 24) {
             return -1;
